@@ -11,27 +11,33 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://www.linkedin.com/in/akashrmalhotra/"
+                href="mailto:vansh.pipaliya.dev@gmail.com"
                 target="_blank"
                 rel="noreferrer"
                 data-cursor="disable"
               >
-                LinkedIn — akashrmalhotra
+                vansh.pipaliya.dev@gmail.com
+              </a>
+            </p>
+            <p>
+              <a
+                href="https://www.linkedin.com/in/vansh-pipaliya-a6a5b1281"
+                target="_blank"
+                rel="noreferrer"
+                data-cursor="disable"
+              >
+                LinkedIn — vansh-pipaliya
               </a>
             </p>
             <h4>Education</h4>
             <p>
-              PGPWE (MBA), Indian Institute of Management, Lucknow — 2021–2023
-            </p>
-            <p>
-              B.Tech Computer Science, Manav Rachna Educational Institutions —
-              2009–2013
+              B.Tech in Computer Science &amp; Engineering, Institute of Technology, Nirma University — 2023–2027
             </p>
           </div>
           <div className="contact-box">
             <h4>Social</h4>
             <a
-              href="https://github.com/akashrmalhotra"
+              href="https://github.com/Vanshgh7"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -40,7 +46,7 @@ const Contact = () => {
               GitHub <MdArrowOutward />
             </a>
             <a
-              href="https://www.linkedin.com/in/akashrmalhotra/"
+              href="https://www.linkedin.com/in/vansh-pipaliya-a6a5b1281"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
@@ -49,27 +55,27 @@ const Contact = () => {
               LinkedIn <MdArrowOutward />
             </a>
             <a
-              href="https://www.youtube.com/@Leftbraincoder"
+              href="https://leetcode.com/u/vanshl7c/"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              YouTube <MdArrowOutward />
+              LeetCode <MdArrowOutward />
             </a>
             <a
-              href="https://www.instagram.com/leftbraincoder/"
+              href="mailto:vansh.pipaliya.dev@gmail.com"
               target="_blank"
               rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
-              Instagram <MdArrowOutward />
+              Email <MdArrowOutward />
             </a>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>Akash Malhotra</span>
+              Designed and Developed <br /> by <span>Vansh Pipaliya</span>
             </h2>
             <h5>
               <MdCopyright /> 2026

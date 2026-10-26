@@ -11,10 +11,47 @@ import {
   RapierRigidBody,
 } from "@react-three/rapier";
 
+import { renderToStaticMarkup } from "react-dom/server";
+import { FaJava, FaPython, FaDocker } from "react-icons/fa6";
+import { SiFastapi, SiTensorflow } from "react-icons/si";
+
+function createIconTexture(
+  icon: React.ReactElement,
+  badgeColor: string = "#162238"
+): THREE.Texture {
+  if (typeof document === "undefined") {
+    return new THREE.Texture();
+  }
+  const canvas = document.createElement("canvas");
+  canvas.width = 512;
+  canvas.height = 512;
+  const ctx = canvas.getContext("2d");
+  if (!ctx) return new THREE.CanvasTexture(canvas);
+
+  ctx.fillStyle = "#0a0e17";
+  ctx.fillRect(0, 0, 512, 512);
+
+  ctx.fillStyle = badgeColor;
+  ctx.beginPath();
+  ctx.arc(256, 256, 220, 0, Math.PI * 2);
+  ctx.fill();
+
+  const texture = new THREE.CanvasTexture(canvas);
+
+  const svgString = renderToStaticMarkup(icon);
+  const img = new Image();
+  img.onload = () => {
+    ctx.drawImage(img, 126, 126, 260, 260);
+    texture.needsUpdate = true;
+  };
+  img.src = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svgString)}`;
+
+  return texture;
+}
+
 const textureLoader = new THREE.TextureLoader();
 const imageUrls = [
   "/images/react2.webp",
-  "/images/next2.webp",
   "/images/node2.webp",
   "/images/express.webp",
   "/images/mongo.webp",
@@ -22,7 +59,16 @@ const imageUrls = [
   "/images/typescript.webp",
   "/images/javascript.webp",
 ];
-const textures = imageUrls.map((url) => textureLoader.load(url));
+
+const imageTextures = imageUrls.map((url) => textureLoader.load(url));
+const iconTextures = [
+  createIconTexture(<FaJava size={260} color="#f89820" />, "#2b1c10"),
+  createIconTexture(<FaPython size={260} color="#38bdf8" />, "#102336"),
+  createIconTexture(<SiFastapi size={260} color="#009688" />, "#082824"),
+  createIconTexture(<SiTensorflow size={260} color="#ff6f00" />, "#2e1b0c"),
+  createIconTexture(<FaDocker size={260} color="#2496ed" />, "#0d243b"),
+];
+const textures = [...imageTextures, ...iconTextures];
 
 const sphereGeometry = new THREE.SphereGeometry(1, 28, 28);
 

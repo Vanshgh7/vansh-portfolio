@@ -15,58 +15,49 @@ const Career = () => {
           <div className="career-info-box">
             <div className="career-info-in">
               <div className="career-role">
-                <h4>Co-Founder</h4>
-                <h5>CallHQ.ai</h5>
+                <h4>MERN Stack Developer</h4>
+                <h5>Ethics Infotech LLP, Vadodara</h5>
+              </div>
+              <h3>2026</h3>
+            </div>
+            <p>
+              May 2026 – Jun 2026. Developed backend APIs for MagBrainAI conversational agent platform using Node.js + Express; 25+ RESTful API endpoints serving AI model inference with &lt;200 ms average response time. Built frontend using React.js; integrated 5+ core features (chat UI, conversation history, user auth); improved UI response time by 30%. Optimized MongoDB queries; reduced query time by 40%; implemented caching for 50% performance improvement in AI inference pipeline.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Technical Lead</h4>
+                <h5>Nirma University, Ahmedabad</h5>
+              </div>
+              <h3>2024–26</h3>
+            </div>
+            <p>
+              Sept 2024 – April 2026. Technical Lead, CSI &amp; Data Science Clubs. Coordinated HackNUThon25: 1500+ participants across 10 colleges; $15K+ sponsorships; managed logistics and execution. Organized 18 technical workshops (Python, ML, cybersecurity); mentored 50+ students; increased engagement by 40%.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>B.Tech in CSE</h4>
+                <h5>Institute of Technology, Nirma University</h5>
+              </div>
+              <h3>2027</h3>
+            </div>
+            <p>
+              Education: Institute of Technology, Nirma University. B.Tech in Computer Science and Engineering. June 2027 (expected). CGPA 8.07/10 through 6th semester.
+            </p>
+          </div>
+          <div className="career-info-box">
+            <div className="career-info-in">
+              <div className="career-role">
+                <h4>Certifications &amp; Achievements</h4>
+                <h5>Oracle &amp; LeetCode</h5>
               </div>
               <h3>NOW</h3>
             </div>
             <p>
-              Building CallHQ.ai, a voice AI platform for
-              automating customer calls, support, and conversions.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Adobe</h4>
-                <h5>6+ years · Noida</h5>
-              </div>
-              <h3>2017–24</h3>
-            </div>
-            <p>
-              Senior Lead Software Engineer (Feb 2024 – May 2024). Lead Software
-              Engineer (Feb 2021 – Feb 2024). Software Engineer II (Dec 2017 –
-              Feb 2021): internationalization, globalization, and localization for
-              Adobe Technical Communication Suite; functional and linguistic testing
-              strategy; in-house tooling; collaboration with product and engineering
-              for high-quality localized releases.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Consultant</h4>
-                <h5>Genpact Headstrong </h5>
-              </div>
-              <h3>2016–17</h3>
-            </div>
-            <p>
-              Sep 2016 – Nov 2017. Developed and maintained WCF services consumed
-              by the UI; deployment support across environments; NUnit tests and
-              coverage; bug fixes from QA and users; database work.
-            </p>
-          </div>
-          <div className="career-info-box">
-            <div className="career-info-in">
-              <div className="career-role">
-                <h4>Sf Engineer</h4>
-                <h5>Infogain</h5>
-              </div>
-              <h3>2013-16</h3>
-            </div>
-            <p>
-              Software engineering across enterprise projects, contributing to
-              design, development, and delivery of business applications.
+              Oracle AI Foundation, Generative AI, Data Science. LeetCode: 300+ problems solved, top 15% globally, 50/100-day streaks.
             </p>
           </div>
         </div>

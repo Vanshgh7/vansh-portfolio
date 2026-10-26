@@ -1,9 +1,9 @@
 import {
   FaGithub,
-  FaInstagram,
   FaLinkedinIn,
-  FaYoutube,
 } from "react-icons/fa6";
+import { SiLeetcode } from "react-icons/si";
+import { MdEmail } from "react-icons/md";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
@@ -61,44 +61,48 @@ const SocialIcons = () => {
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
           <a
-            href="https://github.com/akashrmalhotra"
+            href="https://github.com/Vanshgh7"
             target="_blank"
             rel="noreferrer"
+            aria-label="GitHub"
           >
             <FaGithub />
           </a>
         </span>
         <span>
           <a
-            href="https://www.linkedin.com/in/akashrmalhotra/"
+            href="https://www.linkedin.com/in/vansh-pipaliya-a6a5b1281"
             target="_blank"
             rel="noreferrer"
+            aria-label="LinkedIn"
           >
             <FaLinkedinIn />
           </a>
         </span>
         <span>
           <a
-            href="https://www.youtube.com/@Leftbraincoder"
+            href="https://leetcode.com/u/vanshl7c/"
             target="_blank"
             rel="noreferrer"
+            aria-label="LeetCode"
           >
-            <FaYoutube />
+            <SiLeetcode />
           </a>
         </span>
         <span>
           <a
-            href="https://www.instagram.com/leftbraincoder/"
+            href="mailto:vansh.pipaliya.dev@gmail.com"
             target="_blank"
             rel="noreferrer"
+            aria-label="Email"
           >
-            <FaInstagram />
+            <MdEmail />
           </a>
         </span>
       </div>
       <a
         className="resume-button"
-        href="/Akash_Malhotra.pdf"
+        href="/Vansh_Pipaliya_Resume.pdf"
         target="_blank"
         rel="noreferrer"
       >

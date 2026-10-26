@@ -5,32 +5,18 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "CallHQ",
-    category: "Voice AI Calling Platform",
-    tools: "Voice AI, Calling Automation, CRM Integrations",
-    image: "/images/callhq.png",
-    link: "https://callhq.ai",
+    title: "AI-Driven Vulnerability Detection",
+    category: "MLOps, Security",
+    tools: "Python, TensorFlow, OpenVAS, Scikit-learn, REST APIs, Docker",
+    image: "/images/placeholder.webp",
+    link: "https://github.com/Vanshgh7/AI-Driven-Vulnerability-Detection--AI-cyber--",
   },
   {
-    title: "Whatsapp Automation",
-    category: "WABA Application",
-    tools: "WhatsApp Business API, Workflow Automation, Notifications",
-    image: "/images/whatsapp.png",
-    link: "https://whatsapp.callhq.ai",
-  },
-  {
-    title: "Broki",
-    category: "Real Estate Platform for FnB Industry",
-    tools: "Property Discovery, Lead Management, Marketplace Workflows",
-    image: "/images/broki.png",
-    link: "https://broki.in",
-  },
-  {
-    title: "Orrdr.com",
-    category: "Ecommerce Platform and Mobile App",
-    tools: "Ecommerce, Mobile Experience, Order Management",
-    image: "/images/orrdr.png",
-    link: "https://orrdr.com",
+    title: "Cloud Infrastructure Simulator",
+    category: "Full-Stack, Simulation",
+    tools: "React 19, TypeScript, Vite, Tailwind CSS v4, Recharts",
+    image: "/images/placeholder.webp",
+    link: "https://github.com/Vanshgh7/Cloud-Infrastructure-Simulator",
   },
 ];
 
