@@ -91,6 +91,12 @@ a.contact-social {
   }
 }
 
+@media only screen and (min-width: 900px) {
+  .contact-box-social {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 900px) {
   .contact-flex {
     flex-direction: column;
