@@ -1,29 +1,32 @@
-import { useEffect, useRef } from "react";
+import { useState, useCallback } from "react";
 import "./styles/WhatIDo.css";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const WhatIDo = () => {
-  const containerRef = useRef<(HTMLDivElement | null)[]>([]);
-  const setRef = (el: HTMLDivElement | null, index: number) => {
-    containerRef.current[index] = el;
+  const [activeIndex, setActiveIndex] = useState<number | null>(null);
+
+  const handleToggle = useCallback(
+    (index: number) => {
+      setActiveIndex((prev) => (prev === index ? null : index));
+    },
+    []
+  );
+
+  const handleKeyDown = useCallback(
+    (e: React.KeyboardEvent, index: number) => {
+      if (e.key === "Enter" || e.key === " ") {
+        e.preventDefault();
+        handleToggle(index);
+      }
+    },
+    [handleToggle]
+  );
+
+  const cardClass = (index: number) => {
+    if (activeIndex === index) return "what-content what-content-active";
+    if (activeIndex !== null) return "what-content what-sibling";
+    return "what-content";
   };
-  useEffect(() => {
-    if (ScrollTrigger.isTouch) {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.classList.remove("what-noTouch");
-          container.addEventListener("click", () => handleClick(container));
-        }
-      });
-    }
-    return () => {
-      containerRef.current.forEach((container) => {
-        if (container) {
-          container.removeEventListener("click", () => handleClick(container));
-        }
-      });
-    };
-  }, []);
+
   return (
     <div className="whatIDO">
       <div className="what-box">
@@ -59,8 +62,12 @@ const WhatIDo = () => {
             </svg>
           </div>
           <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 0)}
+            className={cardClass(0)}
+            onClick={() => handleToggle(0)}
+            onKeyDown={(e) => handleKeyDown(e, 0)}
+            role="button"
+            tabIndex={0}
+            aria-expanded={activeIndex === 0}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -106,8 +113,12 @@ const WhatIDo = () => {
             </div>
           </div>
           <div
-            className="what-content what-noTouch"
-            ref={(el) => setRef(el, 1)}
+            className={cardClass(1)}
+            onClick={() => handleToggle(1)}
+            onKeyDown={(e) => handleKeyDown(e, 1)}
+            role="button"
+            tabIndex={0}
+            aria-expanded={activeIndex === 1}
           >
             <div className="what-border1">
               <svg height="100%">
@@ -147,18 +158,3 @@ const WhatIDo = () => {
 };
 
 export default WhatIDo;
-
-function handleClick(container: HTMLDivElement) {
-  container.classList.toggle("what-content-active");
-  container.classList.remove("what-sibling");
-  if (container.parentElement) {
-    const siblings = Array.from(container.parentElement.children);
-
-    siblings.forEach((sibling) => {
-      if (sibling !== container) {
-        sibling.classList.remove("what-content-active");
-        sibling.classList.toggle("what-sibling");
-      }
-    });
-  }
-}
