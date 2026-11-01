@@ -5,18 +5,20 @@ import { MdArrowBack, MdArrowForward } from "react-icons/md";
 
 const projects = [
   {
-    title: "AI-Driven Vulnerability Detection",
-    category: "MLOps, Security",
-    tools: "Python, TensorFlow, OpenVAS, Scikit-learn, REST APIs, Docker",
-    image: "/images/placeholder.webp",
-    link: "https://github.com/Vanshgh7/AI-Driven-Vulnerability-Detection--AI-cyber--",
-  },
-  {
     title: "Cloud Infrastructure Simulator",
     category: "Full-Stack, Simulation",
     tools: "React 19, TypeScript, Vite, Tailwind CSS v4, Recharts",
-    image: "/images/placeholder.webp",
+    image: "/images/cloud-infrastructure-simulator.png",
+    alt: "Cloud Infrastructure Simulator - Real-time distributed cloud architecture and traffic simulation dashboard",
     link: "https://github.com/Vanshgh7/Cloud-Infrastructure-Simulator",
+  },
+  {
+    title: "AI-Driven Vulnerability Detection",
+    category: "MLOps, Security",
+    tools: "Python, TensorFlow, OpenVAS, Scikit-learn, REST APIs, Docker",
+    image: "/images/ai-vulnerability-detection.png",
+    alt: "AI-Driven Vulnerability Detection - Automated vulnerability detection and threat classification dashboard",
+    link: "https://github.com/Vanshgh7/AI-Driven-Vulnerability-Detection--AI-cyber--",
   },
 ];
 
@@ -101,7 +103,7 @@ const Work = () => {
                     <div className="carousel-image-wrapper">
                       <WorkImage
                         image={project.image}
-                        alt={project.title}
+                        alt={project.alt}
                         link={project.link}
                       />
                     </div>

@@ -230,7 +230,11 @@
 .work-image img {
   max-width: 100%;
   max-height: 400px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
   border-radius: 8px;
+  display: block;
 }
 
 /* ── Responsive ── */
