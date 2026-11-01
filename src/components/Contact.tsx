@@ -12,8 +12,6 @@ const Contact = () => {
             <p>
               <a
                 href="mailto:vansh.pipaliya.dev@gmail.com"
-                target="_blank"
-                rel="noreferrer"
                 data-cursor="disable"
               >
                 vansh.pipaliya.dev@gmail.com
@@ -34,7 +32,7 @@ const Contact = () => {
               B.Tech in Computer Science &amp; Engineering, Institute of Technology, Nirma University — 2023–2027
             </p>
           </div>
-          <div className="contact-box">
+          <div className="contact-box contact-box-social">
             <h4>Social</h4>
             <a
               href="https://github.com/Vanshgh7"
@@ -65,8 +63,6 @@ const Contact = () => {
             </a>
             <a
               href="mailto:vansh.pipaliya.dev@gmail.com"
-              target="_blank"
-              rel="noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
