@@ -11,7 +11,9 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="mailto:vansh.pipaliya.dev@gmail.com"
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=vansh.pipaliya.dev@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
                 data-cursor="disable"
               >
                 vansh.pipaliya.dev@gmail.com
@@ -29,7 +31,9 @@ const Contact = () => {
             </p>
             <h4>Education</h4>
             <p>
-              B.Tech in Computer Science &amp; Engineering, Institute of Technology, Nirma University — 2023–2027
+              B.Tech in Computer Science &amp; Engineering, Nirma University
+              <br />
+              Expected June 2027
             </p>
           </div>
           <div className="contact-box contact-box-social">
@@ -62,7 +66,9 @@ const Contact = () => {
               LeetCode <MdArrowOutward />
             </a>
             <a
-              href="mailto:vansh.pipaliya.dev@gmail.com"
+              href="https://mail.google.com/mail/?view=cm&fs=1&to=vansh.pipaliya.dev@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
               data-cursor="disable"
               className="contact-social"
             >
