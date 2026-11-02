@@ -17,6 +17,7 @@
 .contact-flex {
   display: flex;
   justify-content: space-between;
+  gap: 40px;
 }
 
 .contact-flex h4 {
@@ -28,6 +29,11 @@
 .contact-box {
   display: flex;
   flex-direction: column;
+  min-width: 0;
+}
+
+.contact-box:first-child {
+  max-width: 480px;
 }
 
 .contact-flex p {
