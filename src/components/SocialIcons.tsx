@@ -91,9 +91,7 @@ const SocialIcons = () => {
         </span>
         <span>
           <a
-            href="https://mail.google.com/mail/?view=cm&fs=1&to=vansh.pipaliya.dev@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="mailto:vansh.pipaliya.dev@gmail.com"
             aria-label="Email"
           >
             <MdEmail />

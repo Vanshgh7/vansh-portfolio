@@ -11,9 +11,7 @@ const Contact = () => {
             <h4>Connect</h4>
             <p>
               <a
-                href="https://mail.google.com/mail/?view=cm&fs=1&to=vansh.pipaliya.dev@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:vansh.pipaliya.dev@gmail.com"
                 data-cursor="disable"
               >
                 vansh.pipaliya.dev@gmail.com
@@ -66,9 +64,7 @@ const Contact = () => {
               LeetCode <MdArrowOutward />
             </a>
             <a
-              href="https://mail.google.com/mail/?view=cm&fs=1&to=vansh.pipaliya.dev@gmail.com"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="mailto:vansh.pipaliya.dev@gmail.com"
               data-cursor="disable"
               className="contact-social"
             >
